@@ -37,8 +37,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const filterButtons = document.querySelectorAll('.filter-button');
     filterButtons.forEach(button => {
+        const filterValue = button.getAttribute('data-filter');
+        if (filterValue !== 'all') {
+            // Add icon to the button based on filter value
+            const icon = getIcon(filterValue);
+            button.innerHTML = `${icon} ${button.textContent}`;
+        }
         button.addEventListener('click', () => {
-            const filterValue = button.getAttribute('data-filter');
             filterProjects(filterValue);
         });
     });
@@ -54,6 +59,18 @@ function filterProjects(category) {
             project.style.display = 'none';
         }
     });
+}
+function getIcon(category) {
+    switch (category) {
+        case 'web':
+            return '<i class=\'bx bx-desktop\'></i>';
+        case 'mobile':
+            return '<i class=\'bx bxs-devices\'></i>';
+        case 'photography':
+            return '<i class=\'bx bxs-photo-album\'></i>';
+        default:
+            return '';
+    }
 }
 
 document.addEventListener('DOMContentLoaded', function () {

@@ -56,3 +56,11 @@ function filterProjects(category) {
     });
 }
 
+document.addEventListener('DOMContentLoaded', function () {
+    var menuToggle = document.querySelector('.menu-toggle');
+    var navbar = document.querySelector('.navbar');
+
+    menuToggle.addEventListener('click', function () {
+        navbar.classList.toggle('show');
+    });
+});

@@ -17,8 +17,8 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #333;
-    color: white;
+    background-color: #000;
+    color: white; 
 }
 
 .logo {
@@ -53,15 +53,17 @@ body {
         display: none;
         flex-direction: column;
         align-items: flex-start;
-        background-color: #333;
+        background-color: #000000e7;
         position: absolute;
         width: 100%;
         top: 70px;
         left: 0;
+        
     }
 
     .navbar.show {
         display: flex;
+        align-items: center;
     }
 
     .navbar a {
@@ -716,6 +718,7 @@ body {
     align-items: center;
     gap: 3rem;
     padding-left: 30px;
+    padding-right: 30px;
     margin-top: 1px;
 }
 .contact-text{
@@ -801,16 +804,15 @@ body {
     box-shadow: 0 0 10px #00F72F;
 }
 
+/* Base styling for larger screens */
 .contact-form form {
     position: relative;
     margin-top: 160px;
-    margin-right: 6%;
-    
-
+    margin-right: 10px;
 }
 
 .contact-form form input,
-form textarea {
+.contact-form form textarea {
     border: none;
     outline: none;
     width: 90%;
@@ -821,9 +823,7 @@ form textarea {
     font-weight: 600;
     margin-bottom: 0.5rem;
     border-radius: 10px;
-    box-shadow: 2px 2px 0px #00F72F,
-        2px 2px 0px #00f72de1;
-
+    box-shadow: 2px 2px 0px #00F72F, 2px 2px 0px #00f72de1;
 }
 
 .contact-form textarea {
@@ -844,8 +844,7 @@ form textarea {
     opacity: 0;
     animation: slidetop 1s ease forwards;
     animation-delay: 0.2s;
-    box-shadow: 0 0 4px #00F72F,
-        0 0 10px #00F72F;
+    box-shadow: 0 0 4px #00F72F, 0 0 10px #00F72F;
 }
 
 .contact-form form .send:hover {
@@ -853,6 +852,62 @@ form textarea {
     color: rgb(24, 4, 4);
     box-shadow: 0 0 20px #00F72F;
 }
+
+/* Responsive styling for smaller screens */
+@media only screen and (max-width: 600px) {
+    .contact-form form {
+        margin-top: 80px;
+        margin-right: 2%;
+    }
+
+    .contact-form form input,
+    .contact-form form textarea {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .contact-form textarea {
+        height: 150px;
+    }
+
+    .contact-form form .send {
+        padding: 12px 40px;
+    }
+}
+/* Your other styles remain unchanged */
+
+/* Responsive styling for smaller screens */
+@media only screen and (max-width: 600px) {
+    .contact {
+        grid-template-columns: 1fr; /* Switch to one-column layout */
+    }
+
+    .contact-form form {
+        margin-top: 20px; /* Adjust as needed */
+        margin-right: 0; /* Remove right margin */
+    }
+
+    .contact-form form input,
+    .contact-form form textarea {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .contact-form textarea {
+        height: 150px;
+    }
+
+    .contact-form form .send {
+        padding: 12px 40px;
+    }
+
+    .contact-icons {
+        opacity: 1; /* Ensure icons are visible */
+        animation: none; /* Disable animation if needed */
+    }
+}
+
+
 
 .modern-footer {
     width: 100%;
@@ -1017,6 +1072,7 @@ body {
   }
 
 
+  
 
   
 
@@ -1333,4 +1389,27 @@ margin-bottom: 50px;
         width: 100%;
         margin: 16px 0;
     }
+}
+/* Existing styles for .page-heading, .filters, .filter-button, and other elements remain unchanged */
+
+
+/* New CSS for hiding text in filter buttons on mobile */
+@media only screen and (max-width: 600px) {
+    .filters button {
+        padding: 6px; /* Adjust padding for smaller screens */
+        font-size: 0; /* Hide text */
+    }
+
+    .filters button i {
+        display: inline-block;
+        font-size: 24px; /* Adjust icon size for smaller screens */
+    }
+
+    .page-heading h2 {
+        font-size: 40px; /* Adjust font size for smaller screens */
+        margin-top: 60px; /* Adjust margin-top for smaller screens */
+        margin-bottom: 30px; /* Adjust margin-bottom for smaller screens */
+    }
+
+    /* Additional adjustments for other elements if needed */
 }

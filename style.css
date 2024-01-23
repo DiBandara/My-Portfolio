@@ -227,7 +227,7 @@ body {
     opacity: 0;
     animation: slideleft 1.5s ease forwards;
     animation-delay: calc(.2s * var(--i));
-    margin: 30px 15px 30px 0;
+    margin: 30px 10px 10px 0;
     animation-delay: 1s;
 
 }

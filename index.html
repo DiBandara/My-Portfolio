@@ -78,14 +78,15 @@
 
     <section  id="project">
         <div class="page-heading">
-          <h2 >My <span>Projects</span></h2>
+            <h2>My <span>Projects</span></h2>
             <div class="filters">
-                <button class="filter-button" data-filter="all">All</button>
-                <button class="filter-button" data-filter="web">Web Development</button>
-                <button class="filter-button" data-filter="mobile">Mobile App</button>
-                <button class="filter-button" data-filter="photography">Photography</button>
+                <button class="filter-button" data-filter="all"><i class='bx bx-list-ul'> All</i></button>
+                <button class="filter-button" data-filter="web"><i class='bx bx-desktop'> Web Site</i></button>
+                <button class="filter-button" data-filter="mobile"><i class='bx bxs-mobile'> Mobile</i></button>
+                <button class="filter-button" data-filter="photography"><i class='bx bxs-camera'>Photography</i></button>
             </div>
         </div>
+        
           <br>
             <div class="projects">
                 <a href="https://github.com/DiBandara/Random_Number-_Selector" class="card web">
@@ -311,65 +312,69 @@
                 </div>
             </div>
         </section>
-        -->
-        <div class="gal" id="gal">
-            <h2>Gal<span>lery</span></h2>
-        <article class="gallery">
-            
-            <img src="Images\Gal\1704904278909.jpg" alt="guitar player at concert" />
-            <img src="Images\Gal\1704904278943.jpg" alt="duo singing" />
-            <img src="Images\Gal\1704904279071.jpg" alt="crowd cheering" />
-            <img src="Images\Gal\1704904278894.jpg" alt="singer performing" />
-            <img src="Images\Gal\1704904278962.jpg" alt="singer fistbumping crowd" />
-            <img src="Images\Gal\1704904279008.jpg" alt="man with a guitar singing" />
-            <img src="Images\Gal\1704904279054.jpg" alt="crowd looking at a lighted stage" />
-            <img src="Images\Gal\1704904278985.jpg " alt="woman singing on stage" />
-          </article>
         
-        </div>
+        <body1>
+            <div class="gal" id="gal">
+                <h2>Gal<span>lery</span></h2>
+            <article class="gallery">
+                
+                <img src="Images\Gal\1704904278909.jpg" alt="guitar player at concert" />
+                <img src="Images\Gal\1704904278943.jpg" alt="duo singing" />
+                <img src="Images\Gal\1704904279071.jpg" alt="crowd cheering" />
+                <img src="Images\Gal\1704904278894.jpg" alt="singer performing" />
+                <img src="Images\Gal\1704904278962.jpg" alt="singer fistbumping crowd" />
+                <img src="Images\Gal\1704904279008.jpg" alt="man with a guitar singing" />
+                <img src="Images\Gal\1704904279054.jpg" alt="crowd looking at a lighted stage" />
+                <img src="Images\Gal\1704904278985.jpg " alt="woman singing on stage" />
+              </article>
+            
+            </div>
+          </body1>
+    -->
         <section class="contact" id="contact">
-    <div class="contact-text">
-        <h2>Contact<span> Me</span></h2>
-        <h4>Let's Work Together</h4>
-        <p>My name is Di Bandara. I am a Frontend Developer. I have 1 year of experience. Also, I am a Photographer</p>
-        <div class="contact-list">
-            <li><a href="mailto:tharukadileesha1@gmail.com"><i class='bx bxs-send'></i> tharukadileesha1@gmail.com</a></li>
-            <li><i class='bx bx-phone'></i> 0713291955</li>
-        </div>
-        <div>
-            <a href="https://www.facebook.com/dileesha.bandara.31"  target="_blank" class="contact-icons" style="--i-1"><i
-                    class='bx bxl-facebook'></i></a>
-            <a href="https://www.instagram.com/tharuka_dileesha/"  target="_blank" class="contact-icons" style="--i-2"><i
-                    class='bx bxl-instagram'></i></a>
-            <a href="https://wa.me/message/3A5PR5EGWRDSP1"  target="_blank" class="contact-icons" style="--i-3"><i
-                    class='bx bxl-whatsapp'></i></a>
-            <a href="" class="contact-icons" target="_blank" style="--i-4"><i class='bx bxl-tiktok'></i></a>
-            <a href="https://github.com/DiBandara"  target="_blank" class="contact-icons" style="--i-5"><i class='bx bxl-github'></i></a>
+            <div class="contact-text">
+                <h2>Contact<span> Me</span></h2>
+                <h4>Let's Work Together</h4>
+                <p>My name is Di Bandara. I am a Frontend Developer. I have 1 year of experience. Also, I am a Photographer</p>
+                <div class="contact-list">
+                    <li><a href="mailto:tharukadileesha1@gmail.com"><i class='bx bxs-send'></i> tharukadileesha1@gmail.com</a></li>
+                    <li><i class='bx bx-phone'></i> 0713291955</li>
+                </div>
+                <div>
+                    <a href="https://www.facebook.com/dileesha.bandara.31" target="_blank" class="contact-icons" style="--i-1"><i
+                            class='bx bxl-facebook'></i></a>
+                    <a href="https://www.instagram.com/tharuka_dileesha/" target="_blank" class="contact-icons" style="--i-2"><i
+                            class='bx bxl-instagram'></i></a>
+                    <a href="https://wa.me/message/3A5PR5EGWRDSP1" target="_blank" class="contact-icons" style="--i-3"><i
+                            class='bx bxl-whatsapp'></i></a>
+                    <a href="" class="contact-icons" target="_blank" style="--i-4"><i class='bx bxl-tiktok'></i></a>
+                    <a href="https://github.com/DiBandara" target="_blank" class="contact-icons" style="--i-5"><i class='bx bxl-github'></i></a>
+                </div>
+            </div>
+          
+            <div class="contact-form">
+                <form name="contact-us" onsubmit="event.preventDefault(); handleSubmit();">
+                    <br><br><br>
+                    <input name="name" type="text" id="name" placeholder="Name" required>
+        
+                    <input name="email" type="email" id="email" placeholder="Email" required>
+        
+                    <input name="subject" type="text" id="subject" placeholder="Subject">
+        
+                    <textarea name="message" id="message" cols="40" rows="10" placeholder="Message" required></textarea>
+        
+                    <div class="g-recaptcha" data-sitekey="6LeiSlApAAAAACrMy4DQ6sHqF8R7XlWkWlx3vad5"></div>
+        
+                    <br/>
+                   
+                    <div id="loading-icon">Loading...</div>
+        
+                    
+                    <input type="submit" id="submit-btn" value="Submit" class="send">
+                </form>
             
-            
-        </div>
-    </div>
-    <div class="contact-form">
-        <form name="contact-us" onsubmit="event.preventDefault(); handleSubmit();">
-            <br><br><br><br><br><br>
-            <input name="name" type="text" id="name" placeholder="Name" required>
-
-            <input name="email" type="email" id="email" placeholder="Email" required>
-
-            <input name="subject" type="text" id="subject" placeholder="Subject">
-
-            <textarea name="message" id="message" cols="40" rows="10" placeholder="Message" required></textarea>
-
-            <div class="g-recaptcha" data-sitekey="6LeiSlApAAAAACrMy4DQ6sHqF8R7XlWkWlx3vad5"></div>
-
-            <br/>
-            <!-- Loading icon -->
-            <div id="loading-icon">Loading...</div>
-
-            <!-- Submit button -->
-            <input type="submit" id="submit-btn" value="Submit" class="send">
-        </form>
-    </div>
+            </div>
+        </section>
     <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbztXfT5xkmSwIcKgyw0DseWA-a7xzx3vQX9oQaT4q65xocJ2N47_56iWEOYv1Hwzebd/exec'
         const form = document.forms['contact-us']
@@ -394,7 +399,7 @@
                 .catch(error => console.error('Error!', error.message))
         })
     </script>
-</section>
+
 
 
 <div class="modern-footer">

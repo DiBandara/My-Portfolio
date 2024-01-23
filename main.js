@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
             button.innerHTML = `${icon} ${button.textContent}`;
         }
         button.addEventListener('click', () => {
-            filterProjects(filterValue);
+            filterProjects(filterValue); 
         });
     });
 });
@@ -80,4 +80,13 @@ document.addEventListener('DOMContentLoaded', function () {
     menuToggle.addEventListener('click', function () {
         navbar.classList.toggle('show');
     });
+
+    // Close the mobile navigation bar when a link is clicked
+    var navLinks = document.querySelectorAll('.navbar a');
+    navLinks.forEach(function (link) {
+        link.addEventListener('click', function () {
+            navbar.classList.remove('show');
+        });
+    });
 });
+

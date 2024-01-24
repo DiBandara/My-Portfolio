@@ -328,7 +328,7 @@ body {
     padding: 70px 6% 0;
     margin-top: 75px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     align-items: center;
     gap: 1.5rem;
 }
@@ -348,29 +348,37 @@ body {
     
 }
 
-.about-text h2 {
-    font-size: 60px;
+.about-text {
+    text-align: center;
 }
 
-.about-text h2 span {
-    color: #00F72F;
+.about-text h2 {
+    font-size: 40px;
 }
 
 .about-text h4 {
-    font-size: 29px;
-    font-weight: 600;
-    color: aliceblue;
-    line-height: 1.7;
-    margin: 15px 0 30px;
+    font-size: 20px;
 }
 
 .about-text p {
-    color: aliceblue;
-    font-size: 20px;
-    line-height: 1.4;
-    margin-bottom: 4rem;
-    
+    font-size: 16px;
+    margin-bottom: 2rem;
 }
+
+@media screen and (min-width: 768px) {
+    .about {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-img img {
+        margin-top: 9%;
+    }
+
+    .about-text {
+        text-align: left;
+    }
+}
+
 
 #services {
     padding: 70px 5% 0;

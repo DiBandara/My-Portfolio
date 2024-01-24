@@ -350,7 +350,7 @@ body {
 }
 
 #services {
-    padding: 70px 6% 0;
+    padding: 70px 5% 0;
     margin-top: 70px;
     color: #ffffff;
     font-size: 20px;
@@ -360,16 +360,17 @@ body {
 
 .sub-title {
     text-align: center;
-    font-size: 60px;
+    font-size: 80px;
     padding-bottom: 70px;
 }
 
 .sub-title span {
     color: #00F72F;
+    
 }
 
 .container {
-    padding: 20px;
+    padding: 10px;
 
 }
 
@@ -722,15 +723,17 @@ body {
     margin-top: 1px;
 }
 .contact-text{
-    padding: 70px 6% 0;
+    padding: 70px 0% 0;
     margin-top: 10px;
+    
 }
 
 .contact-text h2 {
     
-    font-size: 90px;
+    font-size: 89px;
     margin-top: 10px;
     text-align: center;
+  
 }
 
 .contact-text h2 span {

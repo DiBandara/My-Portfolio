@@ -300,6 +300,29 @@ body {
     left: 0;
     width: 100%;
 }
+@media only screen and (max-width: 768px) {
+    .home {
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 130px;
+    }
+
+    .home-content {
+        text-align: center;
+       
+    }
+
+    .home-img {
+        margin-top: 30px; /* Adjust the spacing between content and image */
+    }
+
+    .home-img img {
+        margin-top: 0;
+        max-width: 100%; /* Make the image responsive to the width of its container */
+        border-radius: 0; /* Remove border radius if needed */
+    }
+}
+
 
 .about {
     padding: 70px 6% 0;
